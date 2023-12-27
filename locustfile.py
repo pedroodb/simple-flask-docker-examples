@@ -7,8 +7,7 @@ class BasicUser(HttpUser):
     def index(self):
         self.client.get("/")
         
-
     @task
     def sum(self):
-        self.client.post("/sum", name="sum", json={'num1': 1, 'num2': 2})
+        self.client.post("/sum", json={'num1': 1, 'num2': 2})
     

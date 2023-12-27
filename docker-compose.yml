@@ -1,10 +1,10 @@
 version: "3.2"
 services:
-  api:
-    image: flask_api
-    container_name: flask_api
+  producer:
+    image: producer
+    container_name: producer
     build:
-      context: ./src
+      context: ./producer
     ports:
       - "5010:5010"
     depends_on:
@@ -17,8 +17,8 @@ services:
       - "8001:8001"
     
   consumer:
-    image: flask_consumer
-    container_name: flask_consumer
+    image: consumer
+    container_name: consumer
     build:
       context: ./consumer
     ports:
