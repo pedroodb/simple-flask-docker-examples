@@ -2,12 +2,11 @@ from locust import HttpUser, task, between
 
 class BasicUser(HttpUser):
     wait_time = between(1, 5)
-    
-    @task
+
+    @task(1)
     def index(self):
         self.client.get("/")
-        
-    @task
+
+    @task(3)
     def sum(self):
-        self.client.post("/sum", json={'num1': 1, 'num2': 2})
-    
+        self.client.post("/api/sum", json={'num1': 1, 'num2': 2})
