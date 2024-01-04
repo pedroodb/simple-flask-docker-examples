@@ -18,3 +18,8 @@ def sum():
 		num2 = request.args.get('num2')
 	result = (int(num1) + int(num2)) if num1 and num2 else 0
 	return {'result': result}
+
+@api.route('/new')
+def new_feature():
+	# TO-DO
+	return 0
