@@ -21,5 +21,4 @@ def sum():
 
 @api.route('/new')
 def new_feature():
-	# TO-DO
-	return 0
+	return "This is a new feature"
