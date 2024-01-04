@@ -20,7 +20,7 @@ def create_file():
 
 @app.route('/html')
 def html_example():
-    return '<h1>Hello, Docker!</h1>'
+    return render_template('html-demo.html')
 
 @app.route('/json')
 def json_example():

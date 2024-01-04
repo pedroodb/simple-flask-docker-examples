@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Hello Pedro</title>
+		<link rel="stylesheet" href="/static/template.css">
+    </head>
+    <body>
+		<header>
+			<h1>Hello!</h1>
+			<h2>Hello subtitle!</h2>
+		</header>
+		<p class="paragraph1">This is a <strong>paragraph</strong></p>
+		<p class="paragraph1">This is another paragraph</p>
+		<p>
+			<a href="/users/test">Go to user</a>
+		</p>
+		<div id="list-container">
+			<ol>
+				<li>First item</li>
+				<li>Second item</li>
+				<li>Third item</li>
+			</ol>
+		</div>
+		<a href="https://anyoneai.com/">
+			<img id="main-image" src="https://media.licdn.com/dms/image/C4D0BAQHMuLPRieef-w/company-logo_200_200/0/1656678740246?e=2147483647&v=beta&t=RD3stsihmUuSvliGHm6rQC1tXSUfh_faOCI7cbyfJdo"/>
+		</a>
+		<form action="/api/sum" method="get">
+			<input type="number" name="num1" placeholder="Write any number" required>
+			<input type="number" name="num2" placeholder="num2" required>
+			<input type="submit">
+		</form>
+		<footer>
+			<p>Anyone AI inc. 2023</p>
+		</footer>
+    </body>
+</html>
